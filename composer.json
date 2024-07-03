@@ -1,0 +1,27 @@
+{
+    "name": "ryantxr/jsonmodel",
+    "description": "A class that uses JSON as a model.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ryantxr\\JsonModel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ryan teixeira",
+            "email": "ryantxr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpstan/phpstan": "^1.11"
+    },
+    "scripts": {
+        "phpstan": "./vendor/bin/phpstan analyze -l 2 src/"
+    }
+}
